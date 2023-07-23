@@ -63,7 +63,7 @@ const App = () => {
 				{ title: currentTitle, role: message.role, content: message.content },
 			]);
 		}
-	}, [message, currentTitle]);
+	}, [ value ,message, currentTitle]);
 	console.log(previousChats);
 	const currentChat = previousChats.filter(
 		(previousChat) => previousChat.title === currentTitle
